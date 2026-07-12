@@ -14,14 +14,14 @@ local colors = {
   fg2 = "#FFFFFF",
   bg3 = "#9154A0",
   fg3 = "#FAFAFA",
-  accent1 = "#7E578F",
-  accent2 = "#8F5787",
-  accent3 = "#84578F",
-  accent4 = "#8F8A57",
-  error = "#AC7AC2",
-  warn = "#B47AC2",
-  info = "#C27AB7",
-  hint = "#C2BC7A",
+  accent1 = "#DBAAF0",
+  accent2 = "#F0AAE5",
+  accent3 = "#E2AAF0",
+  accent4 = "#F0EAAA",
+  error = "#F0CCFF",
+  warn = "#F5CCFF",
+  info = "#FFCCF7",
+  hint = "#FFFBCC",
 }
 
 local hl = vim.api.nvim_set_hl
@@ -75,6 +75,14 @@ hl(0, "DiagnosticError", { fg = colors.error })
 hl(0, "DiagnosticWarn", { fg = colors.warn })
 hl(0, "DiagnosticInfo", { fg = colors.info })
 hl(0, "DiagnosticHint", { fg = colors.hint })
+
+-- Cursor and references
+hl(0, "Cursor", { bg = colors.fg, fg = colors.bg })
+hl(0, "TermCursor", { bg = colors.fg, fg = colors.bg })
+hl(0, "LspReferenceText", { bg = colors.bg3 })
+hl(0, "LspReferenceRead", { bg = colors.bg3 })
+hl(0, "LspReferenceWrite", { bg = colors.bg3 })
+hl(0, "MatchParen", { bg = colors.accent3, fg = colors.bg, bold = true })
 
 -- Neo-tree / NvimTree
 hl(0, "NeoTreeNormal", { bg = colors.bg, fg = colors.fg })
