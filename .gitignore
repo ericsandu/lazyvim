@@ -6,6 +6,6 @@ debug
 foo.*
 *.log
 data
-colors/wallbash.lua
+wallbash.lua
 lazy-lock.json
 colorscheme.lua
