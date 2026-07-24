@@ -8,3 +8,4 @@ foo.*
 data
 colors/wallbash.lua
 lazy-lock.json
+colorscheme.lua
